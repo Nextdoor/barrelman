@@ -9,7 +9,6 @@ cachetools==2.1.0
 cffi==1.11.5
 chardet==3.0.4
 coverage==4.5.1
-cryptography==2.1.4
 docutils==0.14
 idna==2.7
 idna-ssl==1.0.1
