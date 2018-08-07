@@ -38,7 +38,7 @@ class Config:
 
             self.kms_client = boto_session.create_client(
                 'kms', region_name=os.getenv(
-                    'KMS_AWS_REGION', 'us-west-2'))
+                    'KMS_AWS_REGION', 'us-east-1'))
 
             if self.github_app_private_key is None:
                 self.github_app_private_key = self._decrypt_kms(
