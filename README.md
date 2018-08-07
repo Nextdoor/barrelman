@@ -1,4 +1,4 @@
-# barrelman
+# Barrelman
 
 **Watch the things that matter to you on Github.**
 
