@@ -57,6 +57,8 @@ Barrelman supports **github teams**. Specify a team by using "team/" in front of
 <br/>
 
 Barrelman will detect if the barrelman.yml file is corrupted on master or if a PR that changes it mucks it up.
+
 If you receive a comment on a PR stating that something is wrong with the file, carefully check the format of the barrelman.yml file of the specified branch.
+
 **Common mistakes:** tabs instead of 4 spaces, no space after dash, missing colon after rule.
 If your regex pattern is not getting recognized, try removing the surrounding quotes.
