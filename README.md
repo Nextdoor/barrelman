@@ -19,7 +19,7 @@ Review other's PRs and watch for things like:
 ## Writing Rules 
 Barrelman runs Python's regex engine on your rules. A rule consists of a pattern and a list of github usernames or teamnames.  
 Put rules in a file named **barrelman.yml** in the master branch of the repo. Rules will be checked against newly added changes from the diff of the PR.
-  
+
 
  ````
 'hello world':
@@ -42,7 +42,7 @@ https://docs.python.org/2/library/re.html#regular-expression-syntax
     - tchalla
     
 # Rule with newlines
-'line1\n\+line2':
+'line1\nline2':
     - tonystark
 ```` 
 
@@ -56,6 +56,7 @@ Barrelman supports **github teams**. Specify a team by using "team/" in front of
 ````
 <br/>
 
-Barrelman will detect if the barrelman.yml file is corrupted on master or if a PR that changes it mucks it up.  
-If you receive a comment on a PR stating that something is wrong with the file, carefully check the format of the barrelman.yml file of the specified branch.   
+Barrelman will detect if the barrelman.yml file is corrupted on master or if a PR that changes it mucks it up.
+If you receive a comment on a PR stating that something is wrong with the file, carefully check the format of the barrelman.yml file of the specified branch.
 **Common mistakes:** tabs instead of 4 spaces, no space after dash, missing colon after rule.
+If your regex pattern is not getting recognized, try removing the surrounding quotes.
